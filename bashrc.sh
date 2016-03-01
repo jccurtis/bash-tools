@@ -11,8 +11,6 @@ YELLOW="\[\033[1;33m\]"
 GREEN="\[\033[0;32m\]"
 PINK="\[\033[1;35m\]"
 NO_COLOR="\[\033[0m\]"
-# wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh ~/git-prompt.sh
-# mv git-prompt.sh .git-prompt.sh
 source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 # Git branch in prompt (no hostname - \h)
