@@ -15,7 +15,10 @@ source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 # Git branch in prompt (no hostname - \h)
 # http://stackoverflow.com/questions/5379986/why-doesnt-my-bash-prompt-update
-PS1="$GREEN\u:$PINK\w$YELLOW\$(__git_ps1 '(%s)')$NO_COLOR\$ "
+# \w$    # current directory with tilde
+# \W$    # basename of current directory
+# $PWD$  # full pathname of current directory
+PS1="$GREEN\u:$PINK\W$YELLOW\$(__git_ps1 '(%s)')$NO_COLOR\$ "
 
 # -----------------------------------------------------------------------------
 # ls
